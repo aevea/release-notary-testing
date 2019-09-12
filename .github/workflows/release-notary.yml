@@ -13,3 +13,5 @@ jobs:
         uses: docker://commitsar/release-notary
         with:
           args: release-notary publish
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
