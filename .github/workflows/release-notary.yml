@@ -1,0 +1,15 @@
+name: Linters
+on: release
+
+jobs:
+  commitsar:
+    name: Commitsar
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v1
+
+      - name: Release notary
+        uses: docker://commitsar/release-notary
+        with:
+          args: release-notary publish
