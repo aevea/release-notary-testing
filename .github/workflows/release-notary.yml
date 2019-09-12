@@ -1,9 +1,9 @@
-name: Linters
+name: Release Notary
 on: release
 
 jobs:
-  commitsar:
-    name: Commitsar
+  release-notary:
+    name: Release-notary
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
